@@ -28,7 +28,7 @@ local Library = {
 local Players = game:GetService("Players")
 local UIS = game:GetService("UserInputService")
 local RDS = game:GetService("ReplicatedStorage")
-local AC = require(script.Parent:FindFirstChild("Acrylic"))
+local AC = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Fluent-Renewed/refs/heads/main/src/Acrylic/AcrylicBlur.luau"))()
 local RS = game:GetService("RunService")
 local TS = game:GetService("TweenService")
 local TXS = game:GetService("TextService")
@@ -41,7 +41,7 @@ local VG = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 local Player = Players.LocalPlayer
 local Mouse = Player:GetMouse()
 
-local SelfModules = {UI = require(script.Parent:FindFirstChild("UI.lua"))}
+local SelfModules = {UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularSVyixiu/Scarlet/refs/heads/main/UI.lua"))()}
 local Storage = { Connections = {ForAuth = {}}, Tween = { Cosmetic = {} } }
 
 local ListenForInput = false
