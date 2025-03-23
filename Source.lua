@@ -28,20 +28,20 @@ local Library = {
 local Players = game:GetService("Players")
 local UIS = game:GetService("UserInputService")
 local RDS = game:GetService("ReplicatedStorage")
-local AC = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Fluent-Renewed/refs/heads/main/src/Acrylic/AcrylicBlur.luau"))()
+local AC = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/refs/heads/master/src/Acrylic/init.lua"))()
 local RS = game:GetService("RunService")
 local TS = game:GetService("TweenService")
 local TXS = game:GetService("TextService")
 local HS = game:GetService("HttpService")
 local MPS = game:GetService("MarketplaceService")
-local VG = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+local VG = game:GetService("CoreGui")
 
 -- Variables
 
 local Player = Players.LocalPlayer
 local Mouse = Player:GetMouse()
 
-local SelfModules = {UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularSVyixiu/Scarlet/refs/heads/main/UI.lua"))()}
+local SelfModules = {UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/UI.lua"))()}
 local Storage = { Connections = {ForAuth = {}}, Tween = { Cosmetic = {} } }
 
 local ListenForInput = false
